@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The World of Dance</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="icon" href="favicon.jpg" type="image/x-icon">
+    </head>
+    <body>
+       
+        <ul class="menu-main">
+            <li><a href="Dancers.html" >Танцоры</a></li>
+            <li><a href="index.html">Направления</a></li>
+            <li><a href="Films.html" >Фильмы</a></li>
+            <li><a href="Suits.html">Мнения</a></li>
+            <li><a href=""class="current">Анкета</a></li>
+        </ul>
+        <header>Анкета</header>
+        <div id="profile">
+            <h6 id="news" class="info">Чтобы первыми узнавать новости танцевального мира, зарегестрируйтесь на нашем сайте.</h6>
+        <div id="profile">
+        <div clas="profilePicture"><img src="profile1.jpg" width="400" class="picture"></div>
+        <h6 ><legend class="profileName">Контактная информация</legend></h6><h6 class="info">
+            <label for="name">Имя пользователя</label><input  type="text" pattern="^[а-яА-Я]+$" required placeholder="Введите имя"><label class="required"></label><br>
+            <p><label for="Question1">Возраст  </label><input  type="number"  required name="t"  min="1" max="70" step="1" placeholder="Введите возраст"><label class="required"></label></p> 
+            <p><label for="Question2">Как часто вы танцуете? </label><input type="text"  required pattern="^[а-яА-Я]+$" placeholder="Часто\редко"><label class="required"></label></p> 
+            <p><label for="Question3">Как часто вы читаете танцевальные новости? </label><input type="text"  required pattern="^[а-яА-Я]+$" placeholder="Часто\редко"><label class="required"></label></p> 
+            <p><label for="Question4">О чем именно вы хотели бы читать на нашем сайте? </label><input type="text"  required pattern="^[а-яА-Я]+$" placeholder="о людях, о спроектах"><label class="required"></label></p>
+            <h6 class="profileName">Выберите разделы для рассылки:</h6><h6 class="info">
+            <form >
+                <p><input type="checkbox" name="a" ><span1>Молодые танцоры</span1></p>
+                <input type="checkbox" name="a" > <span1>Новые фильмы о танцах</span1>
+                <p><input type="checkbox" name="a"  ><span1>Новые танцевальные направления</span1></p>
+                <p><input type="checkbox" name="a"> <span1>Новые танцевальные костюмы</span1></p>
+            </form>
+        </div>
+            <div id="container">
+                <form id="form_1" >
+                <button type="submit"><h3 color="rgb(86, 58, 211)">Отправить анкету</h3></button>
+              </form>
+              </div>
+        
+        <script src="script.js"></script>
+        </body>
