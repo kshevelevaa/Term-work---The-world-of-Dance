@@ -1,0 +1,325 @@
+.menu-main {
+  list-style: none;
+  margin: 40px 15px 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: white;
+}
+.menu-main li {display: inline-block;
+line-height: 40px;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #e5a6e7;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #e5a6e7;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+header{
+    font-size: 30px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #949494;
+    text-align:center;
+}
+h6{
+    color:rgb(86, 58, 211);
+    line-height: 30px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    margin: 30px 10px 10px 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.info{
+    text-align: justify;
+    line-height: 30px;
+    top: 10px;
+    font-size: 15px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    margin: 30px 10px 10px 10px;
+    color: #949494;
+}
+/*DANCERS///////////////////////////////////////////////////*/
+.name{
+    font-size: 20px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #e5a6e7;
+    text-align:center;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+.photo1{
+    float:left;
+    margin:10px 10px 10px 10px;   
+}
+.photo2{
+    float: right;
+    margin:10px 10px 10px 10px;
+}
+.photo1 {
+    display: inline-block; 
+    overflow: hidden; 
+  }
+  .photo1 img {
+    transition: 1s; 
+    display: block; 
+  }
+  .photo1 img:hover {
+    transform: scale(1.2); 
+  }
+  .photo2 {
+    display: inline-block; 
+    overflow: hidden; 
+  }
+  .photo2 img {
+    transition: 1s; 
+    display: block; 
+  }
+  .photo2 img:hover {
+    transform: scale(1.2); 
+  }
+
+/*FILMS*****************************************************************/
+.trailer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#adv{
+    border-radius: 10px 20px;
+    float:left;
+    width:170px;
+    margin-top: 100px;
+    justify-content: space-around;
+    background-color: rgb(255, 196, 228);
+    
+}
+#films{
+    margin-left: 200px;
+}
+
+/*DIRECTIONS//////////////////////////////////////////////////////////////*/
+.menu {
+    list-style: none;
+    margin: 30px 30px 10px;
+    padding: 25px 5px 5px;
+    text-align: center;
+    background: rgb(255, 196, 228);
+  }
+  .menu li {display: block;line-height: 40px;}
+  .menu li:after {
+    color: #606060;
+    display: inline-block;
+  }
+  .menu li:last-child:after {content: none;}
+  .menu a {
+    text-decoration: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 34px 0 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .4s;
+  }
+  .menu a, .menu-main a:visited {color: #9d999d;}
+  .menu a.current, .menu-main a:hover{color: #e5a6e7;}
+  .menu a:before,
+  .menu a:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: #e5a6e7;
+    transition: .8s;
+  }
+  .menu a:hover:before, .menu .current:before {left: 0;}
+  .menu a:hover:after, .menu .current:after {right: 0;}   
+  #bal, #sovrem, #narod, #news{
+      font-size: 15px;
+      text-align: center;
+      background-color: rgb(255, 196, 228);
+     
+  }
+  @media(max-width:1150px){
+   .direct{
+       display: flex;
+       flex-wrap:wrap;
+   }
+  }
+.grey-image {
+    float:right;
+    border-radius: 10px 20px;
+    margin:15px 15px 15px 15px ;
+    filter: grayscale(1); /* Черно-белый фильтр для изображения */
+    transition: 1s; /* Время изменения цвета изображения */
+}
+.grey-image:hover {
+    filter: grayscale(0); /* Цветное изображение при наведении */
+}
+
+/*PROFILES**********************************************************************************/
+input[required]:valid + label{
+    background: url(https://upload.wikimedia.org/wikipedia/commons/0/0d/Google_Material_Design_check.svg) ;
+  }
+  .required {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background: url(https://loading.io/s/icon/jxjyiv.svg) ;
+  }
+  input[type="checkbox"]:checked + span1 { 
+    background: rgb(255, 196, 228);
+  } 
+#profile{
+      margin-left: 30px;
+      
+  }
+  @media(max-width:1000px){
+      #profile{display: flex;
+        flex-direction: column;}
+    .picture{
+        margin-left: calc(350 * (100vw / 1200));
+        margin-right: auto ;
+        border-radius:20px 10px ;
+        width: calc(400 * (100vw / 1200));
+       
+    }
+
+  }
+  @media(min-width:1001px){
+  .picture{
+      border-radius:20px 10px ;
+      float:right;
+      margin:30px 30px 30px 30px ;
+      margin-top: 100px;
+  }
+}
+h3{
+    color:rgb(86, 58, 211); ;
+}
+
+  /*OPINIONS//////////////////////////////////////////*/
+  #opinion {
+    display: grid;
+    grid-template: [start] "quote1 people1"[row2]
+                    [row2] "people2 quote2"[row3]
+                    [row3] "quote3 people3"[row4]
+                    [row4] "people4 quote4"[row5]
+                    [row5] "quote5 people5"[row-end] / 1fr 1fr;
+    grid-gap:15px;
+    }
+    
+    .people1 {
+    grid-area: people1;
+    border: 5px solid rgb(255, 196, 228);
+    }
+    
+    .people2 {
+    grid-area: people2;
+    border: 10px solid rgb(86, 58, 211);
+    }
+    
+    .people3 {
+    grid-area: people3;
+    border: 5px solid rgb(255, 196, 228);
+    }
+    
+    .people4 {
+    grid-area: people4;
+    border: 10px solid rgb(86, 58, 211);
+    }
+    
+    .people5 {
+    grid-area: people5;
+    border: 5px solid rgb(255, 196, 228);
+    }
+    
+    .quote1 {
+    grid-area: quote1;
+    border-bottom: 10px solid rgb(255, 196, 228);
+
+    }
+    
+    .quote2 {
+    grid-area: quote2;
+    border-bottom: 10px solid rgb(86, 58, 211);
+    }
+    
+    .quote3 {
+    grid-area: quote3;
+    border-bottom: 10px solid rgb(255, 196, 228);
+    }
+    
+    .quote4 {
+    grid-area: quote4;
+    border-bottom: 10px solid rgb(86, 58, 211);
+    }
+    
+    .quote5 {
+    grid-area: quote5;
+    border-bottom: 10px solid rgb(255, 196, 228);
+    }
+    
+    
+
+ .people1,.people2,  .people3, .people4, .people5{
+     border-radius: 10px 20px;}
+
+.container {
+    display:inline-block;   
+    position:relative;
+}
+.container div { 
+    display: none;
+    position: absolute; 
+    bottom: 10px; left: 0px; 
+    background-color: rgba(0,0,0,.4); 
+    padding: 5px 5px 5px 10px;
+    color: white
+}
+.container:hover div {
+    display: block;
+    transition: 2s;
+}
